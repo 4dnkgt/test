@@ -18,7 +18,7 @@ app.use(bodyParser.json())
 
 //Routes
 app.get('/', (req, res) => {
- res.send('Hello World! <br>Links:</br> <a href= "http://localhost:3000">Home!</a> <br><a href="http://localhost:3000/api">API Endpoints</a></br> <a href="https://github.com/4dnkgt">Github!</a>')
+ res.send('Hello World! <br>Links:</br> <a href= "https://cyanapi.herokuapp.com/">Home!</a> <br><a href="https://cyanapi.herokuapp.com/api">API Endpoints</a></br> <a href="https://github.com/4dnkgt">Github!</a>')
 })
 
 //Connect to DB
