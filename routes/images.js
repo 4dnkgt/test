@@ -10,17 +10,17 @@ router.get('/images', (req, res) => {
 
 router.get('/images/shibe', async (req, res) => {
     const image = await fetch('http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true').then(response => response.json());
-    const imgdata = [
-        {image: `${image}`}
-    ]
+    const imgdata = {
+        image: `${image}`
+    }
     res.send(imgdata)
 })
 
 router.get('/images/birb', async (req, res) => {
     const image = await fetch('https://shibe.online/api/birds').then(response => response.json());
-    const imgdata = [
-        {image: `${image}`}
-    ]
+    const imgdata = {
+        image: `${image}`
+}
     res.send(imgdata)
 })
 
