@@ -18,20 +18,20 @@ router.get('/pokedex=:pokemon', async (req, res) => {
         ]
         res.send(dataerror)
     }
-    const info = [
-        {name: `${data.name}`},
-        {id: `${data.id}`},
-        {type: `${data.type}`},
-        {species: `${data.species}`},
-        {abilities: `${data.abilities}`},
-        {height: `${data.height}`},
-        {weight: `${data.weight}`},
-        {gender: `${data.gender}`},
-        {hp: `${data.stats.hp}`},
-        {attack: `${data.stats.attack}`},
-        {defense: `${data.stats.defense}`},
-        {speed: `${data.stats.speed}`}
-    ]
+    const info = {
+            name: `${data.name}`,
+            id: `${data.id}`,
+            type: `${data.type}`,
+            species: `${data.species}`,
+            abilities: `${data.abilities}`,
+            height: `${data.height}`,
+            weight: `${data.weight}`,
+            gender: `${data.gender}`,
+            hp: `${data.stats.hp}`,
+            attack: `${data.stats.attack}`,
+            defense: `${data.stats.defense}`,
+            speed: `${data.stats.speed}`
+    }
     res.json(info)
 })
 
